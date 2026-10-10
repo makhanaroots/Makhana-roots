@@ -1,0 +1,20 @@
+
+:root{--green:#244b35;--cream:#fffaf0;--gold:#d6a64f;--ink:#263128;--muted:#667067}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+header{background:var(--green);color:#fff;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{font-size:1.35rem;font-weight:800;letter-spacing:.4px}.brand span{color:#f3d58b}
+nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-size:.94rem}nav a:hover{color:#f3d58b}
+.hero{padding:62px 6%;background:linear-gradient(110deg,#f5ead1,#fffaf0);display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.hero h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.08;margin:8px 0 18px;color:var(--green)}.hero p{max-width:600px;color:#4f5c50}
+.kicker{color:#9b712b;text-transform:uppercase;font-weight:bold;letter-spacing:2px;font-size:.8rem}
+.hero-art{background:#e4d3ac;border-radius:48% 48% 18px 18px;min-height:260px;display:grid;place-items:center;font-size:7rem}
+.btn,button{background:var(--green);color:white;border:0;border-radius:7px;padding:11px 17px;text-decoration:none;display:inline-block;cursor:pointer;font-weight:bold}.btn.gold{background:var(--gold);color:#233526}
+.section{padding:42px 6%}.section h2{color:var(--green);font-size:1.8rem;margin-top:0}.intro{max-width:720px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.product{background:white;border:1px solid #eee2c9;border-radius:13px;overflow:hidden;box-shadow:0 5px 18px #244b3510}
+.product-art{height:155px;background:linear-gradient(135deg,#f3e4bd,#fff8e8);display:grid;place-items:center;font-size:4.2rem}.product-body{padding:17px}.product h3{margin:0 0 5px;color:var(--green)}.price{font-size:1.15rem;font-weight:bold;margin:10px 0;color:#9b712b}.product p{font-size:.93rem;color:var(--muted);min-height:48px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.benefit{background:#f0e8d5;padding:18px;border-radius:10px}
+form{max-width:650px;display:grid;gap:12px}input,textarea{width:100%;padding:12px;border:1px solid #cfc8b8;border-radius:7px;font:inherit;background:white}footer{background:#193827;color:#e9efe9;padding:25px 6%;margin-top:25px}footer a{color:#f3d58b}
+.cart-fab{position:fixed;right:15px;bottom:15px;background:#d6a64f;color:#203629;border-radius:30px;padding:12px 18px;box-shadow:0 4px 16px #0002;font-weight:bold;z-index:3}
+.notice{background:#fff1c9;padding:12px 6%;font-size:.9rem;color:#604b1c}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:42px 6%}.hero-art{min-height:170px;font-size:5rem}.cards{grid-template-columns:1fr 1fr}.benefits{grid-template-columns:1fr}header{align-items:flex-start}nav{gap:10px}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.product p{min-height:0}}
